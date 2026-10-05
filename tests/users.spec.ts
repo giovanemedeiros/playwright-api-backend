@@ -169,6 +169,7 @@ test.describe('API CRUD - Serverest', () => {
     expect(responseBody._id).toBeDefined();
 
     const randomUserUpdate = randomUser + "-update";
+    
     // Update user via API
     const response2 = await request.put(`https://serverest.dev/usuarios/${responseBody._id}`, {
       data: {
